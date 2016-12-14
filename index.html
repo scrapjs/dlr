@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dlr</title>
+    <link rel="stylesheet" href='css/photon.min.css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<script>
+			const pub = require('nanomsg').socket('pub')
+			const sub = require('nanomsg').socket('sub')
+		</script>
+		<script src='dot.js'></script>
+	</body>
+</html>

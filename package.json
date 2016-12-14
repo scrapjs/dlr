@@ -1,0 +1,52 @@
+{
+  "name": "dlr",
+  "productName": "dlr",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "bent",
+    "email": "bent@nothingsatisfies.com",
+    "url": "github.com/reqshark"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "node build && electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "soundcloud downloader",
+    "electron"
+  ],
+  "dependencies": {
+    "browserify": "13",
+    "electron-debug": "1",
+    "request":"2",
+    "get-uri":"2",
+    "browser-id3-writer":"2.3.1",
+    "suuid":"0.0.1",    
+    "main-loop": "3.4",
+    "stylus": "0.54",
+    "virtual-dom": "2.1",
+    "xhr": "2.2",
+    "nanomsg":""
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "",
+    "electron": "1.4.12",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
